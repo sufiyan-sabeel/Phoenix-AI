@@ -1,0 +1,20 @@
+{
+  "name": "phoenix",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PHOENIX — Open-source AI agent platform for terminal, Android, and web",
+  "author": "Umaiz Sufiyan",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean"
+  }
+}

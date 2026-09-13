@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+config.json
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+vendor/PocketStrike-AI/
+vendor/oh-my-pi/

@@ -1,0 +1,88 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        obsidian: '#08090B',
+        graphite: '#101216',
+        slate: '#16191F',
+        recessed: '#0B0D10',
+        'surface-1': '#1e2024',
+        'surface-2': '#282a2e',
+        'surface-3': '#333539',
+        'border-main': '#252932',
+        'border-highlight': '#3E4452',
+        ember: '#FF6A00',
+        'ember-light': '#FF7A1A',
+        'ember-dark': '#E65F00',
+        fire: '#FF3D00',
+        warm: '#FFB347',
+        primary: '#ffb694',
+        secondary: '#ffb4a2',
+        tertiary: '#ffb95a',
+        success: '#39D98A',
+        warning: '#F5B942',
+        error: '#FF5C5C',
+        'text-primary': '#F5F7FA',
+        'text-secondary': '#9299A5',
+        'text-muted': '#565D6A',
+      },
+      fontFamily: {
+        headline: ['Space Grotesk', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        code: ['JetBrains Mono', 'monospace'],
+      },
+      borderRadius: {
+        sm: '0.125rem',
+        DEFAULT: '0.25rem',
+        md: '0.375rem',
+        lg: '0.5rem',
+        xl: '0.75rem',
+      },
+      spacing: {
+        xs: '0.25rem',
+        sm: '0.5rem',
+        md: '0.75rem',
+        lg: '1.25rem',
+        xl: '2rem',
+        gutter: '1rem',
+        'gutter-sm': '0.5rem',
+        'gutter-lg': '1.5rem',
+      },
+      boxShadow: {
+        'elevation-1': '0 1px 2px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3)',
+        'elevation-2': '0 2px 4px rgba(0,0,0,0.4), 0 4px 8px rgba(0,0,0,0.3)',
+        'elevation-3': '0 4px 8px rgba(0,0,0,0.4), 0 8px 16px rgba(0,0,0,0.3)',
+        'elevation-4': '0 8px 16px rgba(0,0,0,0.4), 0 16px 32px rgba(0,0,0,0.3)',
+        'specular': '0 0 0 1px rgba(255,255,255,0.05), 0 1px 0 rgba(255,255,255,0.03)',
+        'ember-glow': '0 0 20px rgba(255,106,0,0.15), 0 0 40px rgba(255,106,0,0.05)',
+      },
+      animation: {
+        'pulse-ember': 'pulse-ember 2s ease-in-out infinite',
+        'fade-in': 'fade-in 0.3s ease-out',
+        'slide-up': 'slide-up 0.3s ease-out',
+        'cursor-blink': 'cursor-blink 1s step-end infinite',
+      },
+      keyframes: {
+        'pulse-ember': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
+        },
+        'fade-in': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        'slide-up': {
+          from: { opacity: '0', transform: 'translateY(8px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        'cursor-blink': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
